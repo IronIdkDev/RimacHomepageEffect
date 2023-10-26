@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.active {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.3s;
+}
+
+#section1 {
+    background-color: #363636;
+}
+
+#section2 {
+    background-color: #1b1b1b;
+}
+
+#section3 {
+    background-color: #121212;
+}
+
+/* Additional Styles for the Menu */
+#menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.menu-item {
+    font-size: 1.2em;
+    color: white;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}

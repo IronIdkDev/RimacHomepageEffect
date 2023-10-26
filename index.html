@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+    <link rel="stylesheet" href="styles.css">   
+    <title>Rimac Homepage Scroll</title>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <h1>Section 1</h1>
+        </div>
+        <div class="section">
+            <h1>Section 2</h1>
+        </div>
+        <div class="section">
+            <h1>Section 3</h1>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            sectionsColor: ['#ffcccb', '#b5e7a0', '#a0e7e5'],
+            anchors: ['section1', 'section2', 'section3'],
+            menu: '#menu',
+            scrollingSpeed: 1000
+        });
+    </script>
+</body>
+</html>
